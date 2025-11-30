@@ -10,11 +10,6 @@ body {
   color: #fff;
 }
 
-h1 {
-  font-size: 1.5em;
-  line-height: 1.4;
-}
-
 .Conteiner {
   display: flex;
   flex-direction: column;

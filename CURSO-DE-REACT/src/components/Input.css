@@ -1,0 +1,18 @@
+input {
+  width: 325px;
+  height: 28px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: rgba(255, 255, 255, 0.369) 2px 5px 10px;
+  transition: .9s;
+}
+
+input:hover {
+  height: 30px;
+}
+
+input:focus,
+input:focus-visible {
+  border: none;
+  outline: none;
+}

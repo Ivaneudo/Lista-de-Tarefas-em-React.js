@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './AddTasks.css'
+import Input from './Input';
 
 
 function AddTasks (props) {
@@ -8,13 +9,13 @@ function AddTasks (props) {
   return (
     <>
       <div className='AddTasks'>
-        <input 
+        <Input 
           type="text" 
           placeholder="Titulo da tarefa: "
           value={title}
           onChange={event => {setTitle(event.target.value)}}
         />
-        <input 
+        <Input 
           type="text" 
           placeholder="Descrição da sua tarefa: " 
           value={description}

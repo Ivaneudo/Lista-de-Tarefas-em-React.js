@@ -41,3 +41,16 @@
   margin: none;
   width: 100%;
 }
+
+.paragrafo{
+  background-color: #27096e;
+  width: 100%;
+  line-height: 25px;
+  padding: 5px 0 ;
+  border-radius: 4px;
+  text-align: start;
+}
+
+.paragrafo p {
+  margin: 0 0 0 5px;
+}

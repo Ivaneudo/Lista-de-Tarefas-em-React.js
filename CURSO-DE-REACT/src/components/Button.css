@@ -1,0 +1,14 @@
+button {
+  background-color: #27096e;
+  border-radius: 3px;
+  margin-bottom: 4px;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+button :focus,
+button :focus-visible {
+  border: none;
+  outline: none;
+}

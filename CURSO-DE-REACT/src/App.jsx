@@ -3,6 +3,7 @@ import { v4 } from 'uuid';
 import AddTasks from './components/AddTasks';
 import Tasks from './components/Tasks';
 import './App.css';
+import Title from './components/Title';
 
 function App () {
 
@@ -57,7 +58,7 @@ function App () {
 return (
     <>
      <div className='Conteiner'>
-      <h1>Gerenciador de Tarefas</h1>
+      <Title>Gerenciador de Tarefas</Title>
       <AddTasks 
         onAddTaskSubmit={onAddTaskSubmit}
       />

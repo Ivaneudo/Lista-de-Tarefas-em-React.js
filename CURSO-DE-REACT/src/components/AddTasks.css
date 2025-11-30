@@ -11,25 +11,6 @@
   color: #fff;
 }
 
-.AddTasks input {
-  width: 325px;
-  height: 28px;
-  border-radius: 3px;
-  border: none;
-  box-shadow: rgba(255, 255, 255, 0.369) 2px 5px 10px;
-  transition: .9s;
-}
-
-.AddTasks input:hover {
-  height: 30px;
-}
-
-.AddTasks input:focus,
-.AddTasks input:focus-visible {
-  border: none;
-  outline: none;
-}
-
 .AddTasks button {
   color: #fff;
   border-radius: 3px;

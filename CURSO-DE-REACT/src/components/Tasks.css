@@ -16,36 +16,15 @@
 }
 
 .Tasks .buttonText {
-  background-color: #27096e;
   text-align: start;
   font-size: 1em;
   font-family: Arial;
-  color: #fff;
-  margin-bottom: 4px;
   min-height: 30px;
   width: 250px;
   border: none;
   outline: none;
-  border-radius: 3px;
 }
 
 .line {
   text-decoration: line-through;
-}
-
-.Tasks .detalhes {
-  background-color: #27096e;
-  border: none;
-  outline: none;
-  border-radius: 3px;
-  margin-bottom: 4px;
-  color: #fff;
-}
-
-.Tasks .buttonText:focus,
-.Tasks .buttonText:focus-visible,
-.Tasks .detalhes:focus,
-.Tasks .detalhes:focus-visible {
-  border: none;
-  outline: none;
 }

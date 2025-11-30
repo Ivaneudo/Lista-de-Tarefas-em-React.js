@@ -2,6 +2,7 @@ import { useSearchParams } from "react-router-dom";
 import './TaskPage.css';
 import { ChevronLeftIcon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import Title from "../components/Title";
 
 function TaskPage () {
 
@@ -14,11 +15,13 @@ function TaskPage () {
     <>
       <div className="Detalhes">
         <button onClick={() => navegate(-1)}><ChevronLeftIcon/></button>
-        <h1>Descrição da Tarefa</h1>
+        <Title>Descrição da Tarefa</Title>
       </div>
       <div className="TaskPage">
-        <h1> {title}</h1>
-        <p>{description}</p>
+        <Title> {title}</Title>
+        <div className="paragrafo">
+          <p>{description}</p>
+        </div>
       </div>
       
     </>
