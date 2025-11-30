@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #2a235d;
+  width: 100vw;
+  height: 100vh;
+  font-family: "JetBrains Mono", monospace;
+  color: #fff;
+}
+
+h1 {
+  font-size: 1.5em;
+  line-height: 1.4;
+}
+
+.Conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+}

@@ -1,0 +1,51 @@
+.Tasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: rgb(87, 87, 171);
+  text-align: start;
+  width: 332px;
+}
+
+.Tasks li {
+  display: flex;
+  gap: 5px;
+}
+
+.Tasks .buttonText {
+  background-color: #27096e;
+  text-align: start;
+  font-size: 1em;
+  font-family: Arial;
+  color: #fff;
+  margin-bottom: 4px;
+  min-height: 30px;
+  width: 250px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+.Tasks .detalhes {
+  background-color: #27096e;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.Tasks .buttonText:focus,
+.Tasks .buttonText:focus-visible,
+.Tasks .detalhes:focus,
+.Tasks .detalhes:focus-visible {
+  border: none;
+  outline: none;
+}

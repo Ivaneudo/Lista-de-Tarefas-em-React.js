@@ -1,0 +1,51 @@
+.AddTasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  font-family: "Jetbrains Mono" monospace;
+  background-color: rgb(87, 87, 171);
+  padding: 10px;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.AddTasks input {
+  width: 325px;
+  height: 28px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: rgba(255, 255, 255, 0.369) 2px 5px 10px;
+  transition: .9s;
+}
+
+.AddTasks input:hover {
+  height: 30px;
+}
+
+.AddTasks input:focus,
+.AddTasks input:focus-visible {
+  border: none;
+  outline: none;
+}
+
+.AddTasks button {
+  color: #fff;
+  border-radius: 3px;
+  width: 328px;
+  height: 30px;
+  border: none;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: "Jetbrains Mono" monospace;
+  background-color: #19044a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  box-shadow: rgba(255, 255, 255, 0.369) 2px 5px 10px;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+}

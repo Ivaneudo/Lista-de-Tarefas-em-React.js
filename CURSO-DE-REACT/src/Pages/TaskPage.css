@@ -1,0 +1,43 @@
+.Detalhes {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.Detalhes button {
+  background-color: #0e5c94;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  margin-bottom: 4px;
+  height: 35px;
+  color: #fff;
+  position: absolute;
+  left: 0;
+}
+
+.TaskPage {
+  display: flex;
+  flex-direction: column;
+  min-width: 500px;
+  max-width: 650px;
+  align-items: start;
+  justify-content: center;
+  font-family: "Jetbrains Mono" monospace;
+  background-color: rgb(87, 87, 171);
+  padding: 10px;
+  border-radius: 3px;
+  color: #fff;
+  margin: none;
+  line-height: .1em;
+}
+
+.TaskPage h1 {
+  text-align: start;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: none;
+  width: 100%;
+}

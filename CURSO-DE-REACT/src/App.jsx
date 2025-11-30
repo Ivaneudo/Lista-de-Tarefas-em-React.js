@@ -1,0 +1,74 @@
+import { useEffect, useState } from 'react';
+import { v4 } from 'uuid';
+import AddTasks from './components/AddTasks';
+import Tasks from './components/Tasks';
+import './App.css';
+
+function App () {
+
+  const [tasks, setTasks] = useState(
+      JSON.parse(localStorage.getItem("tasks")) || []
+  );
+
+  useEffect (() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks))
+  }, [tasks]);
+
+  // useEffect (() => {
+  //   async function fetchTasks() {
+  //     const response = await fetch('https://jsonplaceholder.typicode.com/todos?_limit=10', {
+  //       method: 'GET'
+  //     });
+  //     const data = await response.json();
+  //     setTasks(data);
+  //   }
+
+  //   fetchTasks();
+  // }, []);
+
+  function onTesksClick (taskId) {
+    const newTasks = tasks.map( task => {
+      if ( task.id === taskId ) {
+        return {...task, isCompleted: !task.isCompleted};
+      }
+
+      return task;
+    })
+
+    setTasks(newTasks);
+  }
+
+  function onDeliteTaskClick (taskId) {
+    const newTasks = tasks.filter(task => task.id !== taskId);
+    setTasks(newTasks);
+  }
+
+  function onAddTaskSubmit (title, description) {
+    const newTask = {
+      id: v4(),
+      title,
+      description,
+      isCompleted: false
+    };
+
+    setTasks([...tasks, newTask])
+  }
+
+return (
+    <>
+     <div className='Conteiner'>
+      <h1>Gerenciador de Tarefas</h1>
+      <AddTasks 
+        onAddTaskSubmit={onAddTaskSubmit}
+      />
+      <Tasks 
+        tasks={tasks} 
+        onTesksClick={onTesksClick} 
+        onDeliteTaskClick={onDeliteTaskClick}
+      />
+     </div>
+    </>
+  );
+}
+
+export default App;
